@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    padding: 0 50px;
+    gap: 100px;
+}
+.imgContainer{
+    flex: 1;
+    position: relative;
+    height: 400px;
+}
+.contactImg{
+    object-fit: contain;
+}
+.formContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form input,
+.form textarea{
+    padding: 10px;
+    background-color: var(--bgSoft);
+    border: none;
+    border-radius: 5px;
+    color: var(--textSoft);
+    font-family: '__Inter_aaf875', '__Inter_Fallback_aaf875';
+}
+.form button{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn);
+    color: var(--textSoft);
+}
+@media screen and (max-width:768px) {
+    .imgContainer{
+        display: none;
+    }
+}

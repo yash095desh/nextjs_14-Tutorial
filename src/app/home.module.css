@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    gap: 100px;
+    padding: 0 50px;
+}
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.textContainer h1{
+    font-size: 60px;
+}
+.textContainer p{
+    font-size: 15px;
+}
+.imgContainer{
+    position: relative;
+    flex: 1;
+}
+.brandImg{
+    height: 50px;
+    width: 500px;
+    position: relative;
+    filter: grayscale(1);
+}
+.heroImg{
+    object-fit: contain;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons button{
+    padding: 15px;
+    border: none;
+    background-color: var(--text);
+    color: var(--bg);
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.buttons button:first-child{
+    background-color: var(--btn);
+    color: var(--text);
+}
+@media screen and (max-width:1200px) {
+    .container{
+        gap: 50px;
+    }
+    .imgContainer{
+        min-width: 300px;
+    }
+    .textContainer h1{
+        font-size: 50px;
+        gap: 25px;
+    }
+}
+@media screen and (max-width:900px) {
+   .imgContainer{
+    display: none;
+   }
+   .textContainer p{
+    font-size: 20px;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .brandImg{
+        width: 450px; 
+        margin: auto; 
+    }
+}
+@media screen and (max-width:500px) {
+    .textContainer{
+        padding: 0 10px;
+    }
+
+   .textContainer h1{
+    font-size: 30px;
+    }
+    .textContainer p{
+        font-size: 13px;
+    }
+    .brandImg{
+        width: 350px; 
+        margin: auto; 
+    }
+}

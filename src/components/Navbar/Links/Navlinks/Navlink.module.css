@@ -1,0 +1,8 @@
+.container{
+    padding: 10px;
+    border-radius: 20px;
+}
+.active{
+    background-color: #ffff;
+    color: var(--bg);
+}
