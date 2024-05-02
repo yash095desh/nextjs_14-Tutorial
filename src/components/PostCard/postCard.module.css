@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top{
+    display: flex;
+    gap: 10px;
+
+}
+.ImgContainer{
+    width: 90%;
+    height: 400px;
+    position: relative;
+}
+.ImgContainer Image{
+    object-fit: cover;
+}
+.date{
+    transform: rotate(270deg);
+    width: 10%;
+    margin: auto;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.desc {
+    width: 90%;
+    font-size: 13px;
+    color: gray;
+}
+.bottom h2{
+    width: 90%;
+}
+.link{
+    text-decoration: underline; 
+}

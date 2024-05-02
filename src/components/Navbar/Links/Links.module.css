@@ -41,6 +41,7 @@
     align-items: center;
     min-height: calc(100vh - 100px);
     background-color: var(--bg);
+    z-index: 1;
 }
 .links{
     display: none;

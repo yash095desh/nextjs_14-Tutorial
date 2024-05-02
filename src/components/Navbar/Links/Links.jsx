@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import styles from './Links.module.css'
 import Navlink from './Navlinks/Navlink'
+import Image from 'next/image'
 
 function Links() {
     let links = [
@@ -44,8 +45,7 @@ function Links() {
    </div>
 
 
-   <button onClick={()=>{setIsOpen((prev)=>!prev)}} className={styles.menu}>Menu</button>
-
+  <Image src='/menu.png' width={25} height={25} onClick={()=>{setIsOpen((prev)=>!prev)}} className={styles.menu} />
    
 
    {isOpen && 
